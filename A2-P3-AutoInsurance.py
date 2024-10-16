@@ -12,25 +12,25 @@ def main():
 # Input age
     age= input("Enter your age : ")
 #input price of vehicle 
-    vehiclePrice = float(Input=("Enter the purchase price of vehicle : "))
+    vehiclePrice = float(input("Enter the purchase price of vehicle : "))
 #If/Else Sex 
     if sex == "male":
-        if age == "15" and age <"25":
+        if age >= "15" and age <"25":
             monthlyFee = (0.25* vehiclePrice)/12
-        elif age == "25" and age < "40":
+        elif age >= "25" and age < "40":               # originally had == and it didnt work until I made it >=
             monthlyFee = (0.17*vehiclePrice)/12
         else:
             monthlyFee = (0.10*vehiclePrice)/12
     else:
-        if age=="15" and age < "25":
+        if age >="15" and age < "25":
             monthlyFee = (0.20*vehiclePrice)/12
-        elif age =="25" and age < "40":
+        elif age >="25" and age < "40":
             monthlyFee = (0.15*vehiclePrice)/12
         else:
             monthlyFee = (0.10*vehiclePrice)/12
 #elifage
 #calculate monthly 
-    print("Your Monthly Insurance will be $ {0:.2f}").format(monthlyFee)
+    print("Your Monthly Insurance will be $ {0:.2f}".format(monthlyFee))
 #Output Monthly Cost
 
 
