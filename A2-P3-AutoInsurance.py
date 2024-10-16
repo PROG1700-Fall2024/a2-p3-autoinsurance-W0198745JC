@@ -8,7 +8,7 @@ def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
     print("welcome to the Auto Insurance Calculator")
 #Input Male or Female
-    sex= input("Are you 'Male' or 'Female' : ").lower()
+    sex= input("Are you 'Male' or 'Female' : ").lower()  #almost forgot my .lower but caught it in the testing phase
 # Input age
     age= input("Enter your age : ")
 #input price of vehicle 
@@ -29,11 +29,11 @@ def main():
         else:
             monthlyFee = (0.10*vehiclePrice)/12
 #elifage
-#calculate monthly 
+#calculate monthly  #ended up doing this within the elif statements
     print("Your Monthly Insurance will be $ {0:.2f}".format(monthlyFee))
 #Output Monthly Cost
 
-
+# I found doing the flow chart made this move very quickly with very few mistakes other than minor adjustments
 
 
 
